@@ -1,8 +1,13 @@
 def find_element_index(array, value_to_find)
   # Add your solution here
+  length = array.length
   index = 0
-  while value_to_find != array[index] do
-    index += 1
-  end  
-  return index
+  length.times do 
+    if value_to_find == array[index]
+      return index
+      break
+    else 
+      index += 1
+  end 
+  index = nil
 end
