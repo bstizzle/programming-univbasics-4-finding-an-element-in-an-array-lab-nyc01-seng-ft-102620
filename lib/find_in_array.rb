@@ -5,7 +5,6 @@ def find_element_index(array, value_to_find)
   length.times do 
     if value_to_find == array[index]
       return index
-      break
     else 
       index += 1
     end 
